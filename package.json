@@ -1,0 +1,16 @@
+{
+  "name": "react-super-variables",
+  "version": "0.0.0",
+  "main": "./index",
+  "author": "AWStudio",
+  "license": "MIT",
+  "scripts": {
+      "build": "webpack"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "devDependencies": {
+    "react": "^16.0.0"
+  }
+}

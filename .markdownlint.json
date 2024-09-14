@@ -1,0 +1,14 @@
+{
+  "MD013": false,
+  "MD033": {
+    "allowed_elements": [
+      "br",
+      "link",
+      "VARIABLE",
+      "FUNCTION",
+      "STRING",
+      "TYPE",
+      "DEFINITION"
+    ]
+  }
+}
