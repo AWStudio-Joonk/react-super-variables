@@ -1,0 +1,61 @@
+{
+  // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+  // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+  // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+        "name": "Debug Windows #1",
+        "cwd": "${workspaceFolder}",
+        "type": "reactnative",
+        "request": "launch",
+        "platform": "windows"
+    },
+
+    {
+      // yarn explain peer-requirements
+      "name": "Debug Windows #2",
+      "command": "yarn; npx react-native autolink-window; npx react-native init-windows --overwrite; npx react-native run-windows --logging; exit",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+    {
+      // yarn explain peer-requirements
+      "name": "Start Demo",
+      "command": "yarn start",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+
+    {
+      "name": "Git - New Release [1.x.x]",
+      "command": "npm version major; git push; npm publish; exit",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+    {
+      "name": "Git - New Tool [x.1.x]",
+      "command": "npm version minor; git push; npm publish; exit",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+    {
+      "name": "Git - Patch [x.x.1]",
+      "command": "npm version patch; git push; npm publish; exit",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+    {
+      "name": "Git - Prerelease [x.x.x-1]",
+      "command": "npm version prerelease; git push; npm publish; exit",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+    {
+      "name": "Git - Release [x.x.x]",
+      "command": "npm version from-git; git push; npm publish; exit",
+      "request": "launch",
+      "type": "node-terminal"
+    }
+  ]
+}

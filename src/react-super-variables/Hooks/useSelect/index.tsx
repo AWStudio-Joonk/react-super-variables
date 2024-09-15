@@ -1,5 +1,3 @@
-// let dev<Dev>:[Step(30)]{min, max} = 10;
-
 import {useEffect, useState} from 'react';
 
 export let useSelect = (selectionList: string[]) => {

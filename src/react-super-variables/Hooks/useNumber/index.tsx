@@ -1,13 +1,8 @@
-import {useState} from 'react';
+import { useState } from "react";
 
 export let useNumber = (
-  definingValue: number,
-  options?: {
-    min?: number;
-    max?: number;
-    step?: number;
-    decimal?: number;
-  },
+  definingValue: any,
+  options?: any
 ) => {
   let [valueVariable, setValue] = useState<number>(definingValue);
 
@@ -20,11 +15,11 @@ export let useNumber = (
       prevalue = Math.min(value, options.max);
     }
 
-    setValue(prev => {
+    setValue((prev) => {
       if (options?.step) {
         if (prevalue > prev) {
           prevalue = Math.ceil(prevalue);
-        //   prevalue = prev+ - prevalue;
+          //   prevalue = prev+ - prevalue;
         } else if (prevalue < prev) {
           prevalue = Math.floor(prevalue);
         }
