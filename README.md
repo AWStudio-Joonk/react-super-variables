@@ -6,11 +6,13 @@
 [![GitHub license](./assets/license-mit.svg)](https://github.com/AWStudio-Joonk/react-super-variables/blob/main/LICENSE.md)
 [![npm](./assets/npm.svg)](https://www.npmjs.com/package/react-super-variables)
 
-
 **Regular Variables** are variables with built-in validation.\
 **Dynamic variables (Hooks)** - variables with built-in validation implemented through **React Hooks**
 
 The syntax used for the designation is similar to **TypeScript**
+
+>[!NOTE]
+You can maintain the stability of package development through [Boosty](https://boosty.to/awstudio).
 
 - [Super variables for React](#super-variables-for-react)
   - [Types](#types)
