@@ -20,6 +20,7 @@ You can maintain the stability of package development through [Boosty](https://b
     - [TSuperString](#tsuperstring)
     - [TSuperVector2D](#tsupervector2d)
     - [TSuperVector3D](#tsupervector3d)
+  - [Interfaces](#interfaces)
   - [Regular Variables](#regular-variables)
     - [SuperNumber](#supernumber)
     - [SuperString](#superstring)
@@ -31,10 +32,11 @@ You can maintain the stability of package development through [Boosty](https://b
     - [useVector2D](#usevector2d)
     - [useVector3D](#usevector3d)
     - [useObject\<T\>](#useobjectt)
+  - [Support on the Boosty](#support-on-the-boosty)
 
 ## Types
 
-Implementation of popular data types.
+Indicate which data type is used in this part of the code.
 
 ### TSuperNumber
 
@@ -89,6 +91,10 @@ type TSuperVector3D = {
   } | null) =>  boolean
 }
 ```
+
+## Interfaces
+
+The main purpose of interfaces is to provide a single input and output of data types for different implementation methods.
 
 ## Regular Variables
 
@@ -260,3 +266,7 @@ let user = useObject<{
 }>()
 console.log(position.value)
 ```
+
+## [Support on the Boosty](https://boosty.to/awstudio/donate)
+
+[![npm](./assets/awstudio-donate.png)](https://boosty.to/awstudio/donate)
