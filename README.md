@@ -1,4 +1,12 @@
-# Super variables for React
+<!-- # Super variables for React -->
+
+# [Super variables for React](https://awstudio.pro/dev/react-super-variables)
+
+ [![GitHub license](./assets//boosty.svg)](https://github.com/facebook/react/blob/main/LICENSE)
+ [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/main/LICENSE)
+ [![npm version](https://img.shields.io/npm/v/react.svg?style=flat)](https://www.npmjs.com/package/react)
+ [![Demo](https://github.com/facebook/react/actions/workflows/runtime_build_and_test.yml/badge.svg)](https://github.com/facebook/react/actions/workflows/runtime_build_and_test.yml)
+
 
 **Regular Variables** are variables with built-in validation.\
 **Dynamic variables (Hooks)** - variables with built-in validation implemented through **React Hooks**
