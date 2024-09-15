@@ -2,7 +2,7 @@
 
 # [Super variables for React](https://awstudio.pro/dev/react-super-variables)
 
-[![Boosty](./assets/boosty.svg)](https://github.com/facebook/react/blob/main/LICENSE)
+[![Boosty](./assets/boosty.svg)](https://boosty.to/awstudio)
 [![GitHub license](./assets/license-mit.svg)](https://github.com/AWStudio-Joonk/react-super-variables/blob/main/LICENSE.md)
 [![npm](./assets/npm.svg)](https://www.npmjs.com/package/react-super-variables)
 
