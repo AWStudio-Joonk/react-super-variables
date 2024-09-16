@@ -21,14 +21,17 @@ You can maintain the stability of package development through [Boosty](https://b
     - [TSuperVector2D](#tsupervector2d)
     - [TSuperVector3D](#tsupervector3d)
   - [Interfaces](#interfaces)
+    - [ISuperVector2D](#isupervector2d)
   - [Regular Variables](#regular-variables)
     - [SuperNumber](#supernumber)
     - [SuperString](#superstring)
-    - [ISuperVector2D](#isupervector2d)
+    - [SuperVector2D](#supervector2d)
     - [SuperVector3D](#supervector3d)
   - [Dynamic variables (Hooks)](#dynamic-variables-hooks)
     - [useNumber](#usenumber)
     - [useString](#usestring)
+    - [useSelect](#useselect)
+    - [useSwith](#useswith)
     - [useVector2D](#usevector2d)
     - [useVector3D](#usevector3d)
     - [useObject\<T\>](#useobjectt)
@@ -96,6 +99,20 @@ type TSuperVector3D = {
 
 The main purpose of interfaces is to provide a single input and output of data types for different implementation methods.
 
+### ISuperVector2D
+
+```TSX
+interface ISuperVector2D{
+  (value?: {x: number, y: number}, 
+  options?: {
+    min?: {x: number, y: number} | number,
+    max?: {x: number, y: number} | number,
+    step?: {x: number, y: number} | number,
+    decimal?: {x: number, y: number} | number
+  }) : TSuperVector2D;
+}
+```
+
 ## Regular Variables
 
 Regular variables with auto-validation
@@ -157,18 +174,20 @@ let name = SuperString('Mark', {
 
 ```
 
-### ISuperVector2D
+### SuperVector2D
+
+The method implements the interface [SuperVector2D](#isupervector2d).
 
 ```TSX
-interface ISuperVector2D{
-  (value?: {x: number, y: number}, 
-  options?: {
-    min?: {x: number, y: number} | number,
-    max?: {x: number, y: number} | number,
-    step?: {x: number, y: number} | number,
-    decimal?: {x: number, y: number} | number
-  }) : TSuperVector2D;
-}
+SuperVector2D<ISuperVector2D>();
+```
+
+Exemple
+
+```TSX
+import { SuperVector2D } from "react-super-variables";
+
+let position = SuperVector2D();
 ```
 
 ### SuperVector3D
@@ -215,6 +234,18 @@ import { useString } from 'react-super-variables';
 
 let name = useString('Mark')
 console.log(name.value)
+```
+
+### useSelect
+
+```TSX
+useNumber<ISuperNumber>()
+```
+
+### useSwith
+
+```TSX
+useNumber<ISuperNumber>()
 ```
 
 ### useVector2D

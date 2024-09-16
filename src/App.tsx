@@ -2,7 +2,27 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 // import { useNumber } from "mmm";
-import { useNumber } from "./react-super-variables";
+import { useNumber } from "react-super-variables";
+
+type TSuperVector2D = {};
+
+interface ISuperVector2D {
+  (
+    value?: { x: number; y: number },
+    options?: {
+      min?: { x: number; y: number } | number;
+      max?: { x: number; y: number } | number;
+      step?: { x: number; y: number } | number;
+      decimal?: { x: number; y: number } | number;
+    }
+  ): TSuperVector2D;
+}
+
+const SuperVector2D: ISuperVector2D = () => {
+  return {};
+};
+
+SuperVector2D<ISuperVector2D>();
 
 // let useNumber2 = (
 //   definingValue: number,
@@ -21,9 +41,7 @@ import { useNumber } from "./react-super-variables";
 
 function App() {
   let num = useNumber(10);
-console.log(num);
-
-  
+  console.log(num);
 
   return (
     <div className="App">
@@ -43,7 +61,10 @@ console.log(num);
       </header>
 
       <main>
-        <input value={num.value} onChange={e => num.set(Number(e.target.value))} />
+        <input
+          value={num.value}
+          onChange={(e) => num.set(Number(e.target.value))}
+        />
         <div>{num.value}</div>
       </main>
     </div>
