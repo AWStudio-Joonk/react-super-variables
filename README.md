@@ -119,9 +119,11 @@ Regular variables with auto-validation
 
 ### SuperNumber
 
-if the new value is larger than the old one, the rounding goes up and around.
+Variables have their own built-in validation.
+
+If the new value is larger than the old one, the rounding goes up and around.
 when declaring a variable, it is assumed that the previous value was zero.\
-The value not set is `null`
+The value not set is `zero`
 
 ```TSX
 interface SuperNumber{
@@ -206,6 +208,12 @@ interface SuperVector3D{
 
 ## Dynamic variables (Hooks)
 
+Variables have their own built-in validation. Implemented via `React Hooks'.
+
+If the new value is larger than the old one, the rounding goes up and around.
+when declaring a variable, it is assumed that the previous value was zero.\
+The value not set is `zero`
+
 ### useNumber
 
 ```TSX
@@ -269,13 +277,24 @@ console.log(position.value)
 useVector3D<ISuperVector3D>()
 ```
 
-Exemple
+```TSX
+useVector3D< ISuperVector3D >()
+```
+
+```TSX
+useVector3D <ISuperVector3D>()
+```
+
+```TSX
+useVector3D < ISuperVector3D >()
+```
+
+Simple Example:
 
 ```TSX
 import { useVector3D } from 'react-super-variables';
 
 let position = useVector3D()
-console.log(position.value)
 ```
 
 ### useObject\<T\>
@@ -286,7 +305,7 @@ Dynamic object
 useObject<ISuperObject>()
 ```
 
-Exemple
+Simple Example:
 
 ```TSX
 import { useObject } from 'react-super-variables';
